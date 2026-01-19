@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin:20px 29px 19px 35px;
+    position: sticky;
+    top: 0; /* რჩება ზედ */
+    
+}
+.search-nav {
+display: flex;
+align-items: center;
+
+}
+ .data-nav  .btn {
+   width: 175px;
+   height: 58px;
+   background: #ECF3F5;
+   color: #2C3832;
+   margin-left: 21px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+ }
+ .btn:hover {
+    background:  #B1CED4;
+    color: white;
+    cursor: pointer;
+}
+
+.search-nav input:last-child {
+   width: 357px;
+   height: 58px;
+   border-radius: 10px;
+   background-color:  #ECF3F5;
+   border: none;
+   outline: none;
+   padding: 25px 20px;
+   margin-left: 109px;
+}
+.card-section {
+    /* display:block */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-self: center;
+    text-transform: uppercase;
+     width: 900px;
+   margin-left: 140px ;
+    margin-top: 50px;
+    height:80vh;
+    overflow-y: auto;
+   
+
+}
+.card-section::-webkit-scrollbar{
+ display: none;
+}
+
+.card {
+ /* display: inline-block;*/
+  border-radius: 20px;
+  width: 203px;
+   height: 214px;
+     background: #D8E6E9;
+     border-radius: 20px;
+     
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px 0 rgba(0,0,0,0.15);
+}
+.card {
+  position: relative;
+}
+
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "add";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  background-color: #E0B284;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  /* დასაწყისში დამალვა */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px); /* ცოტა ქვემოთ */
+}
+
+.card:hover::before {
+  opacity: 1;
+  transform: translateY(0); /* ნელ–ნელა ზევით */
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+
+.card:hover::after {
+  opacity: 1;
+  border-radius: 20px;
+
+}
+
+.cover-photoes {
+    width: 203px;
+    height: 140px;
+    display: block;
+    overflow: hidden;
+ }
+
+
+.container {
+ 
+  height: 71px;
+  background: #D8E6E9;
+  padding: 10px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.title {
+          
+ font-family: "Quicksand";
+font-weight: 500;
+font-style: Medium;
+font-size: 17px;
+ margin-bottom: 8px;
+text-align: center; 
+}
+.container .eclipce {
+    
+font-family: "Quicksand";
+font-weight: 500;
+font-style: Medium;
+font-size: 8px; 
+
+}
+.btn-section {
+    background: #EAF0F0;
+    width: 947px;
+    height: 106px;
+
+left: 110px;
+bottom: 0px;   
+position: sticky;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 29px;
+margin-bottom: 60px;
+}
+
+
+.btn-section .btn:first-child {
+  background: #4A5C2F;
+  width: 158px;
+  height: 58px;
+
+opacity: 1;
+top: 22px;
+left: 25px;
+gap: 10px;
+border-radius: 10px;
+padding-top: 19px;
+padding-right: 44px;
+padding-bottom: 19px;
+padding-left: 44px;
+border: 0;
+text-transform: uppercase;
+
+}
+ .btn-section :nth-child(n+2) { 
+    width: 195px;
+height: 58px;
+opacity: 1;
+gap: 10px;
+border-radius: 10px;
+padding-top: 19px;
+padding-right: 44px;
+padding-bottom: 19px;
+padding-left: 44px;
+background: #D9D9D9;
+border: 0;
+text-transform: uppercase;
+
+
+}
+
+.btn-section :nth-child(n+2):hover {
+  background: #4A5C2F;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+.btn:focus {
+  outline: 2px solid #6f848d;
+
+}
+.search-input {
+  width: 300px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+/* focus */
+input:focus {
+  border-color:  #b1ced4;
+  box-shadow: 0 0 0 3px rgba(47, 98, 107, 0.2);
+  outline: none;
+}
+
+/* placeholder */
+input::placeholder {
+  color:  #b1ced4;
+    font-family: "Quicksand", sans-serif;
+ 
+}
+
+
+
+/* hover */
+.btn:hover {
+  background: #556b2f;
+  color: white;
+}
+
+/* active click */
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* keyboard focus */
+.btn:focus {
+  outline: 2px solid #556b2f;
+}
+
+.date-only {
+  width: 19px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.date-only ::-webkit-datetime-edit {
+  display: none;
+}
+input [type="dste"]::-webkit-calendar-picker-idicator {
+  opacity: 1;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+input [type="dste"]::-webkit-datetime-edit {
+  display: none;
+}
+
+.cont {
+  max-width: 1200px;
+}
